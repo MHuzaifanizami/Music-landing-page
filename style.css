@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+}
+
+
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+
+.nav-contents ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.nav-contents ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+.nav-contents ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+
+.hero-section {
+    background-image: url('images/hero_image.png');
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.hero-container h1 {
+    font-size: 98px;
+
+}
+
+.hero-container h3 {
+    font-size: 32px;
+
+}
+
+
+.music-section {
+    padding-top: 50px;
+    background-color: var(--purple500);
+    color: white;
+    text-align: center;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ihone-ipad-image {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.music-container {
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+
+
+}
+
+.primary-btn {
+    background-color: var(--red600);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--purple600);
+    color: white;
+}
+
+.about-music {
+    margin-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.vedio-section {
+    background-image: url('images/video.png');
+    display: grid;
+    place-items: center;
+    height: 800px;
+    color: white;
+}
+
+.vedio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vedio-section,
+.hero-section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+}
+footer{
+    background-color: var(--purple600);
+}
+.upper-footer {
+display: flex;
+justify-content: space-between;
+padding: 30px;
+color: white;
+list-style: none;
+
+}
+
+.upper-footer ul{
+    list-style: none;
+}
+.upper-footer  h4{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid white;
+}
+
+.lower-footer{
+    background-color: var(--purple300);
+    text-align: center;
+    color: white;
+}
